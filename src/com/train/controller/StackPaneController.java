@@ -1,7 +1,6 @@
 package com.train.controller;
 
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -32,8 +31,11 @@ public class StackPaneController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        // wywoływanie akcji
         button.setText("Jestem button");
 
+        // event po kliknięciu
         EventHandler<ActionEvent> handler = new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -42,6 +44,7 @@ public class StackPaneController implements Initializable {
         };
         button.addEventFilter(ActionEvent.ACTION ,handler); // uruchomienie akcji
 
+        // event po najechaniu myszką
         EventHandler<MouseEvent> mouseEventEventHandler = new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
@@ -49,6 +52,7 @@ public class StackPaneController implements Initializable {
             }
         };
 
+        // event za pomocą lambdy oraz usunięcie event Handler
         button.setOnAction(e->{
             System.out.println("Event z SetOnAction - z lambdy");
             button.removeEventHandler(MouseEvent.MOUSE_ENTERED, mouseEventEventHandler);
