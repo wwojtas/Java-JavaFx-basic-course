@@ -19,7 +19,7 @@ public class LauncherHVBox extends Application {
         HboxVBoxController hboxVBoxController = new HboxVBoxController();
         loader.setController(hboxVBoxController);
         HBox hBox = loader.load();
-        VBox vBox = loader.load();
+//        VBox vBox = loader.load();
         Scene  scene =new Scene(hBox);
         stage.setScene(scene);
         stage.show();
