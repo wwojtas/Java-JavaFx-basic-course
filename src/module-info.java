@@ -11,9 +11,15 @@ module train1 {
     opens com.odc17.properties.controller;
     opens com.odc17.properties.view;
     opens com.odc17.properties;
-//  odc.18
+//  odc.19
     opens com.odc19.bindExample.controller;
     opens com.odc19.bindExample.view;
     opens com.odc19.bindExample;
+
+    opens com.odc20.listener;
+    opens com.odc20.listener.controller;
+    opens com.odc20.listener.view;
+
+
 
 }

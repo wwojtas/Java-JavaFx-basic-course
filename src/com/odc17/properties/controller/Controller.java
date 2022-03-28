@@ -1,6 +1,7 @@
 package com.odc17.properties.controller;
 
 import com.odc17.properties.model.Person;
+import javafx.beans.Observable;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
