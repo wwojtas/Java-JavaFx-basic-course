@@ -20,6 +20,12 @@ module train1 {
     opens com.odc20.listener.controller;
     opens com.odc20.listener.view;
 
+    // myProperty
+    opens com.myProperty.controller;
+    opens com.myProperty.view;
+    opens com.myProperty;
+
+
 
 
 }

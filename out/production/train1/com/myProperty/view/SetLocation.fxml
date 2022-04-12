@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="locationTextField" layoutX="149.0" layoutY="80.0" onAction="#printLocationAction" />
+      <Label layoutX="85.0" layoutY="213.0" text="Twoja miejscowość" />
+      <Label layoutX="94.0" layoutY="275.0" text="Label" />
+      <Label fx:id="locationLabel" layoutX="270.0" layoutY="213.0" />
+   </children>
+</AnchorPane>
